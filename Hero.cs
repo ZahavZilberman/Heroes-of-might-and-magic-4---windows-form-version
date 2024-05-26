@@ -10,8 +10,19 @@ namespace HOMM4
     {
         #region Constructor
 
-        public Hero(string name, int level, string type, string gender, string PathToFilePicture2, string WhereIsHe)/*List<Skill> skills*/
+        public Hero(string name, int level, string type, string gender, string PathToFilePicture2, string WhereIsHe, List<Skill> skills, List<Spell> AdventureSpellsParameter, List<Spell> BattleSPParameter)/**/
         {
+            AdventureMapSpells = new List<Spell>();
+            BattleSpells = new List<Spell>();
+            if(AdventureSpellsParameter.Count > 0)
+            {
+                AdventureMapSpells = AdventureSpellsParameter;
+            }
+            if(BattleSPParameter.Count > 0)
+            {
+                BattleSpells = BattleSPParameter;
+            }
+
             Name = name;
             Level = 1;
             Type = type;
@@ -103,8 +114,8 @@ namespace HOMM4
         public List<Creature> HisCreaturesOnHim { get; set; }
         public double HP { get; set; }
         public double MaxSpellPoints { get; set; }
-        // public List<Spell> AdventureMapSpells{get;set;}
-        // public List<Spell> BattleSpells{get;set;}
+        public List<Spell> AdventureMapSpells{get;set;}
+        public List<Spell> BattleSpells{get;set;}
         public double HPMax { get; set; }
         public double RemainingSpellPoints { get; set; }
         public double ATKPoints { get; set; }
@@ -119,6 +130,7 @@ namespace HOMM4
         public List<Artifact> Artifacts{get;set;}
         public double MagicResistencePrecentage { get; set; }
         List<string> SpecialAbilties { get; set; }
+        public bool IsCursorFocused { get; set; }
 
         #endregion
     }

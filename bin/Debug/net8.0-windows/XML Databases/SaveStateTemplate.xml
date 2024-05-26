@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SaveState>
+  <MapName>fddf</MapName>
+  <PlayerDiffcult>Champion</PlayerDiffcult>
+  <YearTime>1</YearTime>
+  <WeekTime>1</WeekTime>
+  <DayTime>7</DayTime>
+  <Resources>
+    <!---->allresourceslist    
+  </Resources>
+  <MagicUniversities>
+    <!----> all magic universities, unused or not
+  </MagicUniversities>
+  <OtherMapObjects>
+    <!----> all other objects, sepreate tag list with child nodes for each one
+    <!----> adding all of their data here may require putting data for every single tile in the map since every tile has a ground object, but that will be hell
+  </OtherMapObjects>
+  <IsDurningBattleOrMap>Map</IsDurningBattleOrMap>
+  <Players>
+    <Player>
+      <Human>True</Human>
+      <AI>False</AI>
+      <Flag>Red</Flag>
+      <TeamNumber>1</TeamNumber>
+      <Resources>
+        <Gold>2000</Gold>
+        <Mercury>1</Mercury>
+        <Gem>2</Gem>
+        <Sulfar>3</Sulfar>
+        <Crystal>4</Crystal>
+      </Resources>
+      <Armies>
+        <InMapArmies>
+          <Army>
+            <XTilePosition>10</XTilePosition>
+            <YTilePosition>10</YTilePosition>
+            <CreaturesInIt>
+              <Creature>
+                <Name>Centaur</Name>
+                <Amount>25</Amount>
+                <RemainingMapMovement>15</RemainingMapMovement>
+                <RemainingBattleMovement>0</RemainingBattleMovement>
+                <IsInHeroArmy>True</IsInHeroArmy>
+                <IsInOnHisOwn>False</IsInOnHisOwn>
+                <IsInCastleVisit>False</IsInCastleVisit>
+                <IsInCastleGrassion>False</IsInCastleGrassion>
+                <IsInBattle>False</IsInBattle>
+                <!----> all reamining properties are equal to always
+              </Creature>
+            </CreaturesInIt>
+            <HeroesInIt>
+              <Hero>
+                <Name>Crag Hack</Name>
+                <Level>2</Level>
+                <!----> type, gender, are known throught his name
+                <IsOutOfCastle>True</IsOutOfCastle>
+                <IsInCastleVisit>False</IsInCastleVisit>
+                <IsInGrassion>False</IsInGrassion>
+                <IsInBattle>False</IsInBattle>
+                <MapMovementRemaining>17</MapMovementRemaining>
+                <BattleMovementRemaining>0</BattleMovementRemaining>
+                <MaxHP>110</MaxHP>
+                <RemainingHP>100</RemainingHP>
+                <MaxSpellPoints>10</MaxSpellPoints>
+                <RemainingSpellPoints>10</RemainingSpellPoints>
+                <AdventureSpellBook></AdventureSpellBook>
+                <BattleSpellBook></BattleSpellBook>
+                <ATKPoints>15</ATKPoints>
+                <DEFPoints>20</DEFPoints>
+                <EXP>1500</EXP>
+                <RangedAttack>0</RangedAttack>
+                <RangedDefense>20</RangedDefense>
+                <Shots>0</Shots>
+                <Speed>7</Speed>
+                <MaxMapMovement>27</MaxMapMovement>
+                <Skills>
+                  <Skill>
+                    <Name>Combat</Name>
+                    <Level>Advanced</Level>
+                  </Skill>
+                  <Skill>
+                    <Name>Melle</Name>
+                    <Level>Basic</Level>
+                  </Skill>
+                  <Skill>
+                    <Name>Magic Resistense</Name>
+                    <Level>Basic</Level>
+                  </Skill>
+                </Skills>
+                <Artifacts>
+                  <!----> putting their names here will be enough
+                </Artifacts>
+                <MagicResistencePrecentage>30</MagicResistencePrecentage>
+                <SpecialAbilties>
+                  <!----> typically there won't be a lot like those, if even at all, even for the strongest 40 level hearoes
+                </SpecialAbilties>
+              </Hero>
+            </HeroesInIt>
+          </Army>
+        </InMapArmies>
+        <GrassionArmies></GrassionArmies>
+        <VisitCastleArmies></VisitCastleArmies>
+        <InBattleArmies></InBattleArmies>
+      </Armies>
+      <Castles>
+        <Castle>
+          <Name>Might</Name>
+          <HasOwner>True</HasOwner>
+          <OwnerPlayer>Red</OwnerPlayer>
+          <HeroGovernor>Crag Hack</HeroGovernor>
+          <XTilePosition>20</XTilePosition>
+          <YTilePosition>20</YTilePosition>
+          <DailyIncome>1000</DailyIncome>
+          <BuildBuldings>
+            <!----> the rest of the buildings are in their same state as when a new game is started on the same map
+            <Building>
+              <Name>City Hall</Name>
+            </Building>
+          </BuildBuldings>
+          <CreaturesAviliableToPurchase>
+            <Creature>
+              <Name>Berserk</Name>
+              <Amount>7</Amount>
+            </Creature>
+            <!----> all that creatures that aren't mentioned here either have 0 aviliable creatures or their generating building hasn't been built yet
+          </CreaturesAviliableToPurchase>
+          <HeroesInPrison></HeroesInPrison>
+        </Castle>
+      </Castles>
+      <OwnedMines>
+        <Mine>
+          <XTilePosition>15</XTilePosition>
+          <YTilePosition>15</YTilePosition>
+          <Resource>Wood</Resource>
+          <Guardians></Guardians>
+        </Mine>
+        <Mine>
+          <XTilePosition>17</XTilePosition>
+          <YTilePosition>17</YTilePosition>
+          <Resource>Ore</Resource>
+          <Guardians></Guardians>
+        </Mine>
+      </OwnedMines>
+      <OwnedDwellings></OwnedDwellings>
+    </Player>
+
+    <Player>
+      <Human>False</Human>
+      <AI>True</AI>
+      <Flag>Blue</Flag>
+      <TeamNumber>2</TeamNumber>
+      <Resources>
+        <Gold>3000</Gold>
+        <Mercury>2</Mercury>
+        <Gem>0</Gem>
+        <Sulfar>5</Sulfar>
+        <Crystal>0</Crystal>
+      </Resources>
+      <Armies>
+        <InMapArmies>
+          <Army>
+            <XTilePosition>25</XTilePosition>
+            <YTilePosition>25</YTilePosition>
+            <CreaturesInIt>
+              <Creature>
+                <Name>Orc</Name>
+                <Amount>40</Amount>
+                <RemainingMapMovement>8</RemainingMapMovement>
+                <RemainingBattleMovement>0</RemainingBattleMovement>
+                <IsInHeroArmy>True</IsInHeroArmy>
+                <IsInOnHisOwn>False</IsInOnHisOwn>
+                <IsInCastleVisit>False</IsInCastleVisit>
+                <IsInCastleGrassion>False</IsInCastleGrassion>
+                <IsInBattle>False</IsInBattle>
+                <!----> all reamining properties are equal to always
+              </Creature>
+            </CreaturesInIt>
+            <HeroesInIt>
+              <Hero>
+                <Name>Cant remember</Name>
+                <Level>2</Level>
+                <!----> type, gender, are known throught his name
+                <IsOutOfCastle>True</IsOutOfCastle>
+                <IsInCastleVisit>False</IsInCastleVisit>
+                <IsInGrassion>False</IsInGrassion>
+                <IsInBattle>False</IsInBattle>
+                <MapMovementRemaining>17</MapMovementRemaining>
+                <BattleMovementRemaining>0</BattleMovementRemaining>
+                <MaxHP>110</MaxHP>
+                <RemainingHP>100</RemainingHP>
+                <MaxSpellPoints>20</MaxSpellPoints>
+                <RemainingSpellPoints>20</RemainingSpellPoints>
+                <AdventureSpellBook></AdventureSpellBook>
+                <BattleSpellBook>
+                  <Spell>
+                    <Town>Chaos</Town>
+                    <Name>Sparks</Name>
+                    <AdditionInfo>37 damage</AdditionInfo>
+                    <Cost>2</Cost>
+                  </Spell>
+                </BattleSpellBook>
+                <ATKPoints>10</ATKPoints>
+                <DEFPoints>10</DEFPoints>
+                <EXP>1200</EXP>
+                <RangedAttack>0</RangedAttack>
+                <RangedDefense>10</RangedDefense>
+                <Shots>0</Shots>
+                <Speed>7</Speed>
+                <MaxMapMovement>27</MaxMapMovement>
+                <Skills>
+                  <Skill>
+                    <Name>Advanced sorrcess magic</Name>
+                    <Level>Advanced</Level>
+                  </Skill>
+                </Skills>
+                <Artifacts></Artifacts>
+                <MagicResistencePrecentage>0</MagicResistencePrecentage>
+                <SpecialAbilties></SpecialAbilties>
+              </Hero>
+            </HeroesInIt>
+          </Army>
+        </InMapArmies>
+        <GrassionArmies></GrassionArmies>
+        <VisitCastleArmies></VisitCastleArmies>
+        <InBattleArmies></InBattleArmies>
+      </Armies>
+      <Castles>
+        <Castle>
+          <Name>Chaos</Name>
+          <HasOwner>True</HasOwner>
+          <OwnerPlayer>Blue</OwnerPlayer>
+          <HeroGovernor>cant remember</HeroGovernor>
+          <XTilePosition>30</XTilePosition>
+          <YTilePosition>30</YTilePosition>
+          <DailyIncome>1000</DailyIncome>
+          <BuildBuldings>
+            <!----> the rest of the buildings are in their same state as when a new game is started on the same map
+            <Building>
+              <Name>City Hall</Name>
+            </Building>
+          </BuildBuldings>
+          <CreaturesAviliableToPurchase>
+            <Creature>
+              <Name>Bandit</Name>
+              <Amount>10</Amount>
+            </Creature>
+            <!----> all that creatures that aren't mentioned here either have 0 aviliable creatures or their generating building hasn't been built yet
+          </CreaturesAviliableToPurchase>
+          <HeroesInPrison></HeroesInPrison>
+        </Castle>
+      </Castles>
+      <OwnedMines>
+        <Mine>
+          <XTilePosition>35</XTilePosition>
+          <YTilePosition>35</YTilePosition>
+          <Resource>Wood</Resource>
+          <Guardians></Guardians>
+        </Mine>
+        <Mine>
+          <XTilePosition>37</XTilePosition>
+          <YTilePosition>37</YTilePosition>
+          <Resource>Ore</Resource>
+          <Guardians></Guardians>
+        </Mine>
+      </OwnedMines>
+      <OwnedDwellings></OwnedDwellings>
+    </Player>
+  </Players>    
+</SaveState>

@@ -10,7 +10,7 @@ namespace HOMM4
     {
         #region Consturctor
 
-        public Creature(double aTKPoints, double dEFPoints, double hP, double maxHP, double rangedAttack, double rangedDefense, double mapMovement, double battleMovement, double speed, double minimumDamage, double maximumDamage, string pictureFilePath, string whichCastelAreYouFrom, string whichBuildingGeneratesYou, double yourDefaultWeeklyGrowth, double spellPoints, bool IsRanged, bool HasNoMellePenality, bool HasDoubleRangedDefense, double NumberOfShots, List<string> SpecialAbilities)
+        public Creature(double aTKPoints, double dEFPoints, double hP, double maxHP, double rangedAttack, double rangedDefense, double mapMovement, double battleMovement, double speed, double minimumDamage, double maximumDamage, string pictureFilePath, string whichCastelAreYouFrom, string whichBuildingGeneratesYou, double yourDefaultWeeklyGrowth, double spellPoints, bool IsRanged, bool HasNoMellePenality, bool HasDoubleRangedDefense, double NumberOfShots, List<string> SpecialAbilities, List<Spell>? AdventureSpellsParamter = null, List<Spell>? BattleSpellsParameter = null)
         {
             ATKPoints = aTKPoints;
             DEFPoints = dEFPoints;
@@ -31,7 +31,18 @@ namespace HOMM4
             IsInOnHisOwn = false;
             IsInHeroArmy = false;
             IsInCastleVisit = false;
-            IsInCastelGrassion = false;
+            IsInCastleGrassion = false;
+            AdventureSpells = new List<Spell>();
+            BattleSpells = new List<Spell>();
+
+            if(AdventureSpellsParamter != null)
+            {
+                AdventureSpells = AdventureSpellsParamter;
+            }
+            if(BattleSpellsParameter != null)
+            {
+                BattleSpells = BattleSpellsParameter;
+            }
 
             Shots = 0; // by default - the game code will assume that anyone with 0 shots isn't an archer
 
@@ -134,9 +145,18 @@ namespace HOMM4
 
         #endregion
 
+        public void InBattle()
+        {
+            IsInBattle = true;
+            //PositiveSpellsOnIt = new List<Spell>();
+            //NegativeSpellsOnIt = new List<Spell>()
+        }
+
         #region Properties
 
         public double ATKPoints { get; set; }
+        public List<Spell> BattleSpells { get; set; }
+        public List<Spell> AdventureSpells { get; set; }
         public double DEFPoints { get; set; }
         public double HP { get; set; }
         public double MaxHP { get; set; }
@@ -159,7 +179,10 @@ namespace HOMM4
         public bool IsInHeroArmy { get; set; }
         public bool IsInOnHisOwn { get; set; }
         public bool IsInCastleVisit { get; set; }
-        public bool IsInCastelGrassion { get; set; }
+        public bool IsInCastleGrassion { get; set; }
+        public bool IsInBattle { get; set; }
+        //public List<Spell> PositiveSpellsOnIt{get;set;}
+        //public List<Spell> NegativeSpellsOnIt{get;set;}
         public List<string> AllCreaturesAbilities { get; set; }
         public List<string> ThisCreaturesAbilities { get; set; }
 

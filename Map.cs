@@ -30,7 +30,42 @@ namespace HOMM4
             Castles = castles;
             Treasures = treasures;
 
+            day = 1;
+            week = 1;
+            year = 1;
+
             // alternativly, we can at the constructor open the 2 text files containing all map data, and update all the above properties according to their content
+        }
+
+        public static DateTime AnyDataUpdate(double month, double week, double day)
+        {
+            string countYearZeros = "000";
+            string countMonthZeros = "00";
+            string countWeekZeros = "0";
+
+            for (int i = 1; i <= week; i = i * 10)
+            {
+                countYearZeros.Remove((countYearZeros.Count() - 1));
+                if (i <= month)
+                {
+                    countMonthZeros.Remove((countMonthZeros.Count() - 1));
+                }
+            }
+
+            countYearZeros = NumOfZerosForDateTime(countYearZeros);
+            countMonthZeros = NumOfZerosForDateTime(countMonthZeros);
+
+            return DateTime.Parse($"{day}/{countMonthZeros}{month}/{countYearZeros}{week}");
+
+        }
+
+        public static string NumOfZerosForDateTime(string zeros)
+        {
+            if (zeros == "0")
+            {
+                return "";
+            }
+            return zeros;
         }
 
         #endregion
@@ -57,6 +92,10 @@ namespace HOMM4
         public List<Treasure> Treasures { get; set; }
         public List<Resource> Resources { get; set; }
         public double NumberOfTeams { get; set; }
+        //public DateTime date { get; set; }
+        public double day { get; set; }
+        public double week { get; set; }
+        public double year { get; set; }
 
         #endregion
     }

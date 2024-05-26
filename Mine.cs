@@ -39,6 +39,8 @@ namespace HOMM4
         public Player? ThePlayerWhoOwnsThisMine{get;set;}
         public string MineResource { get; set; }
         public int HowMuchPerDayItGives { get; set; }
+        public double XTilePosition { get; set; }
+        public double YTilePosition { get; set; }
         
 
         #endregion

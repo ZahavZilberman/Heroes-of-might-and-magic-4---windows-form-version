@@ -23,5 +23,6 @@ namespace HOMM4
         public double ResourceAmount { get; set; }
         public bool IsFire { get; set; }
         public bool ExistsInMap { get; set; }
+        public string FilePathToResourcePictureRepresentation { get; set; }
     }
 }

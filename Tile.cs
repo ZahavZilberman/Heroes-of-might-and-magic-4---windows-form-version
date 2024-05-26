@@ -32,6 +32,10 @@ namespace HOMM4
         public Mine? Mine { get; set; }
         public Map ItsMap { get; set; }
         public Treasure? Treasure { get; set; }
+        public Marketplace? marketplace { get; set; }
+        public SeeMoreOfTheMap? Seemore { get; set; }
+        public SkillAlter? skillAlter { get; set; }
+        public ManaVortex? manavortex { get; set; }
         public double XPosition { get; set; }
         public double YPosition { get; set; }
 
