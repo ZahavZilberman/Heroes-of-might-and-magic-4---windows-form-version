@@ -1,0 +1,16 @@
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\bin\Debug\net8.0-windows\HOMM4.exe
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\bin\Debug\net8.0-windows\HOMM4.deps.json
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\bin\Debug\net8.0-windows\HOMM4.runtimeconfig.json
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\bin\Debug\net8.0-windows\HOMM4.dll
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\bin\Debug\net8.0-windows\HOMM4.pdb
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.Form1.resources
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.csproj.GenerateResource.cache
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.AssemblyInfoInputs.cache
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.AssemblyInfo.cs
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.csproj.CoreCompileInputs.cache
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.dll
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\refint\HOMM4.dll
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.pdb
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\HOMM4.genruntimeconfig.cache
+C:\Users\zahav\OneDrive\Desktop\my own software\HOMM4\HOMM4\obj\Debug\net8.0-windows\ref\HOMM4.dll

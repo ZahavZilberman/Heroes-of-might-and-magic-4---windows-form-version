@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Town>
+  <Properties>
+    <Creatures>
+      <Creature>
+        <Level>1</Level>
+        <Attack>11</Attack>
+        <RangedAttack>0</RangedAttack>
+        <Defense>11</Defense>
+        <Movement>2</Movement>
+        <Health>12</Health>
+        <Name>Dwarf</Name>
+        <MinDamage>2</MinDamage>
+        <MaxDamage>3</MaxDamage>
+        <Archer>False</Archer>
+        <Shots>0</Shots>
+        <Cost>28</Cost>
+        <Growth>18</Growth>
+        <Building>Dwarf Circle</Building>
+      </Creature>
+      <Creature>
+        <Level>1</Level>
+        <Attack>5</Attack>
+        <RangedAttack>10</RangedAttack>
+        <Defense>10</Defense>
+        <Movement>2</Movement>
+        <Health>8</Health>
+        <Name>Halfing</Name>
+        <MinDamage>1</MinDamage>
+        <MaxDamage>2</MaxDamage>
+        <Archer>True</Archer>
+        <Shots>10</Shots>
+        <Cost>22</Cost>
+        <Growth>23</Growth>
+        <Building>Halfing Entery</Building>
+      </Creature>
+      <Creature>
+        <Level>2</Level>
+        <Attack>16</Attack>
+        <RangedAttack>0</RangedAttack>
+        <Defense>16</Defense>
+        <Movement>2</Movement>
+        <Health>50</Health>
+        <Name>Gold Golem</Name>
+        <MinDamage>8</MinDamage>
+        <MaxDamage>12</MaxDamage>
+        <Archer>False</Archer>
+        <Shots>0</Shots>
+        <Cost>240</Cost>
+        <Growth>6</Growth>
+        <Building>Golem Factory</Building>
+      </Creature>
+      <Creature>
+        <Level>2</Level>
+        <Attack>6</Attack>
+        <RangedAttack>0</RangedAttack>
+        <Defense>12</Defense>
+        <Movement>2</Movement>
+        <Health>16</Health>
+        <Name>Mage</Name>
+        <MinDamage>3</MinDamage>
+        <MaxDamage>4</MaxDamage>
+        <Archer>False</Archer>
+        <Shots>0</Shots>
+        <Cost>160</Cost>
+        <Growth>8</Growth>
+        <Building>Mage Libary</Building>
+      </Creature>
+      <Creature>
+        <Level>3</Level>
+        <Attack>22</Attack>
+        <RangedAttack>0</RangedAttack>
+        <Defense>22</Defense>
+        <Movement>2</Movement>
+        <Health>90</Health>
+        <Name>Nage</Name>
+        <MinDamage>14</MinDamage>
+        <MaxDamage>22</MaxDamage>
+        <Archer>False</Archer>
+        <Shots>0</Shots>
+        <Cost>850</Cost>
+        <Growth>4</Growth>
+        <Building>Naga something</Building>
+      </Creature>
+      <Creature>
+        <Level>3</Level>
+        <Attack>8</Attack>
+        <RangedAttack>0</RangedAttack>
+        <Defense>16</Defense>
+        <Movement>4</Movement>
+        <Health>60</Health>
+        <Name>Genie</Name>
+        <MinDamage>9</MinDamage>
+        <MaxDamage>12</MaxDamage>
+        <Archer>False</Archer>
+        <Shots>0</Shots>
+        <Cost>550</Cost>
+        <Growth>6</Growth>
+        <Building>Genie Wind</Building>
+      </Creature>
+      <Creature>
+        <Level>4</Level>
+        <Attack>34</Attack>
+        <RangedAttack>0</RangedAttack>
+        <Defense>34</Defense>
+        <Movement>4</Movement>
+        <Health>220</Health>
+        <Name>Dragon golem</Name>
+        <MinDamage>36</MinDamage>
+        <MaxDamage>55</MaxDamage>
+        <Archer>False</Archer>
+        <Shots>0</Shots>
+        <Cost>5500</Cost>
+        <Growth>2</Growth>
+        <Building>Dragon Factory</Building>
+      </Creature>
+      <Creature>
+        <Level>4</Level>
+        <Attack>32</Attack>
+        <RangedAttack>32</RangedAttack>
+        <Defense>32</Defense>
+        <Movement>3</Movement>
+        <Health>210</Health>
+        <Name>Titan</Name>
+        <MinDamage>34</MinDamage>
+        <MaxDamage>50</MaxDamage>
+        <Archer>True</Archer>
+        <Shots>16</Shots>
+        <Cost>5500</Cost>
+        <Growth>2</Growth>
+        <Building>Cloud Temple</Building>
+      </Creature>
+    </Creatures>
+    <Buildings>
+      <Building>
+        <Name>Hall</Name>
+        <Cost>0</Cost>
+        <BuildByDefault>Yes</BuildByDefault>
+        <HasUpgrade>Yes</HasUpgrade>
+        <Upgrade>Town Hall</Upgrade>
+        <Requires></Requires>
+        <BuldingType>Income</BuldingType>
+      </Building>
+      <Building>
+        <Name>Town Hall</Name>
+        <Cost>3000</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>Yes</HasUpgrade>
+        <Upgrade>City Hall</Upgrade>
+        <Requires>Hall</Requires>
+        <BuldingType>Income</BuldingType>
+      </Building>
+      <Building>
+        <Name>City Hall</Name>
+        <Cost>4000</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Town Hall</Requires>
+        <BuldingType>Income</BuldingType>
+      </Building>
+      <Building>
+        <Name>Fort</Name>
+        <Cost>0</Cost>
+        <BuildByDefault>Yes</BuildByDefault>
+        <HasUpgrade>Yes</HasUpgrade>
+        <Upgrade>Citendal</Upgrade>
+        <Requires></Requires>
+        <BuldingType>Wall</BuldingType>
+      </Building>
+      <Building>
+        <Name>Citendal</Name>
+        <Cost>5000</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>Yes</HasUpgrade>
+        <Upgrade>Castle</Upgrade>
+        <Requires>Fort</Requires>
+        <BuldingType>Wall</BuldingType>
+      </Building>
+      <Building>
+        <Name>Castle</Name>
+        <Cost>5000</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Citendal</Requires>
+        <BuldingType>Wall</BuldingType>
+      </Building>
+      <Building>
+        <Name>Dwarf Circle</Name>
+        <Cost>0</Cost>
+        <BuildByDefault>Yes</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Fort</Requires>
+        <BuldingType>Creature</BuldingType>
+      </Building>
+      <Building>
+        <Name>Halfing Entery</Name>
+        <Cost>0</Cost>
+        <BuildByDefault>Yes</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Fort</Requires>
+        <BuldingType>Creature</BuldingType>
+      </Building>
+      <Building>
+        <Name>Golem Factory</Name>
+        <Cost>4500</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Fort</Requires>
+        <Requires>Level1</Requires>
+        <BuldingType>Creature</BuldingType>
+      </Building>
+      <Building>
+        <Name>Mage Libary</Name>
+        <Cost>4500</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Citendal</Requires>
+        <Requires>Level1</Requires>
+        <BuldingType>Creature</BuldingType>
+      </Building>
+      <Building>
+        <Name>Naga something</Name>
+        <Cost>7000</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Fort</Requires>
+        <Requires>Level2</Requires>
+        <BuldingType>Creature</BuldingType>
+      </Building>
+      <Building>
+        <Name>Genie Wind</Name>
+        <Cost>10000</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Fort</Requires>
+        <Requires>Level2</Requires>
+        <BuldingType>Creature</BuldingType>
+      </Building>
+      <Building>
+        <Name>Dragon Factory</Name>
+        <Cost>250000</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Fort</Requires>
+        <Requires>Level3</Requires>
+        <BuldingType>Creature</BuldingType>
+      </Building>
+      <Building>
+        <Name>Cloud Temple</Name>
+        <Cost>250000</Cost>
+        <BuildByDefault>No</BuildByDefault>
+        <HasUpgrade>No</HasUpgrade>
+        <Upgrade></Upgrade>
+        <Requires>Castle</Requires>
+        <Requires>Level3</Requires>
+        <BuldingType>Creature</BuldingType>
+      </Building>
+    </Buildings>
+  </Properties>
+</Town>
+
+
